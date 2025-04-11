@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c583ecc9532c373cfa7b26cc43a03aaa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c583ecc9532c373cfa7b26cc43a03aaa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c583ecc9532c373cfa7b26cc43a03aaa = L.map(
+                "map_c583ecc9532c373cfa7b26cc43a03aaa",
+                {
+                    center: [52.378887176514, 4.9002776145935],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1da64918155b6aec27ad878e9a10fb9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f1da64918155b6aec27ad878e9a10fb9.addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            var marker_f7b4376a764d20377197dcb3ac1dcfbf = L.marker(
+                [52.378887176514, 4.9002776145935],
+                {
+}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            var icon_362d3434c6a86a5cfd35cdcbd24d8e1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7b4376a764d20377197dcb3ac1dcfbf.setIcon(icon_362d3434c6a86a5cfd35cdcbd24d8e1b);
+        
+    
+            marker_f7b4376a764d20377197dcb3ac1dcfbf.bindTooltip(
+                `<div>
+                     Amsterdam Centraal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e5b7ecdc64170b02114167aeccfd016 = L.circleMarker(
+                [52.2785, 4.977],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(241.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9e5b7ecdc64170b02114167aeccfd016.bindTooltip(
+                `<div>
+                     Abcoude: 28 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a994af3ce0223dc89f4a6e4d4ba5cdb = L.circleMarker(
+                [52.63777923584, 4.7397222518921],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(275.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_4a994af3ce0223dc89f4a6e4d4ba5cdb.bindTooltip(
+                `<div>
+                     Alkmaar: 43 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a943a346f26087b7b312833dd6842a0 = L.circleMarker(
+                [52.643890380859, 4.7641668319702],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(289.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_7a943a346f26087b7b312833dd6842a0.bindTooltip(
+                `<div>
+                     Alkmaar Noord: 49 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_003ead5ccefecfe79544c38c1ac06b76 = L.circleMarker(
+                [52.394165039062, 5.2780556678772],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(275.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_003ead5ccefecfe79544c38c1ac06b76.bindTooltip(
+                `<div>
+                     Almere Buiten: 43 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15ab8eaaa00aa232511f98c2373a1ba5 = L.circleMarker(
+                [52.37503, 5.21764],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(248.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_15ab8eaaa00aa232511f98c2373a1ba5.bindTooltip(
+                `<div>
+                     Almere Centrum: 31 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cef1b55275b1972fcb75ffddd9dce21d = L.circleMarker(
+                [52.367500305176, 5.1902775764465],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(259.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_cef1b55275b1972fcb75ffddd9dce21d.bindTooltip(
+                `<div>
+                     Almere Muziekwijk: 36 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0f826387f184102e7c2d84d29878632 = L.circleMarker(
+                [52.403331756592, 5.3005557060242],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(289.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_c0f826387f184102e7c2d84d29878632.bindTooltip(
+                `<div>
+                     Almere Oostvaarders: 49 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b61a4824d2c399e5f663b044539fb77 = L.circleMarker(
+                [52.376667022705, 5.244722366333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(273.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_1b61a4824d2c399e5f663b044539fb77.bindTooltip(
+                `<div>
+                     Almere Parkwijk: 42 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c5061dff34d16b8bf39a9acd300ecce = L.circleMarker(
+                [52.342778, 5.151944],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(248.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_0c5061dff34d16b8bf39a9acd300ecce.bindTooltip(
+                `<div>
+                     Almere Poort: 31 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89ebe0731b7754500fa493d38a4848fb = L.circleMarker(
+                [52.124443054199, 4.6577777862549],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(305.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_89ebe0731b7754500fa493d38a4848fb.bindTooltip(
+                `<div>
+                     Alphen a/d Rijn: 56 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_271e9d8c40f970cc6171496bec03ab90 = L.circleMarker(
+                [52.153888702393, 5.3705554008484],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(293.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_271e9d8c40f970cc6171496bec03ab90.bindTooltip(
+                `<div>
+                     Amersfoort Centraal: 51 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1eac53df0835d7a968d52959fd541aec = L.circleMarker(
+                [52.174822137451, 5.4038887023926],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(296.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_1eac53df0835d7a968d52959fd541aec.bindTooltip(
+                `<div>
+                     Amersfoort Schothorst: 52 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06103d70f914589270bcc973f0a2f10c = L.circleMarker(
+                [52.192779541016, 5.4338889122009],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(314.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_06103d70f914589270bcc973f0a2f10c.bindTooltip(
+                `<div>
+                     Amersfoort Vathorst: 60 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95ffffddee002a8eca1427552a069b45 = L.circleMarker(
+                [52.346668243408, 4.9177780151367],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(200.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_95ffffddee002a8eca1427552a069b45.bindTooltip(
+                `<div>
+                     Amsterdam Amstel: 10 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d8af28e9f7d5c7515aa7a281e16ca27 = L.circleMarker(
+                [52.3122215271, 4.9469442367554],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(220.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_6d8af28e9f7d5c7515aa7a281e16ca27.bindTooltip(
+                `<div>
+                     Amsterdam Bijlmer ArenA: 19 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49f525f778ba4869370f13bfeffb497c = L.circleMarker(
+                [52.29844, 4.95972],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(234.28571428571428 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_49f525f778ba4869370f13bfeffb497c.bindTooltip(
+                `<div>
+                     Amsterdam Holendrecht: 25 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b01252e6c608c25809a55ec13dcba91 = L.circleMarker(
+                [52.357776641846, 4.8338890075684],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(206.85714285714286 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9b01252e6c608c25809a55ec13dcba91.bindTooltip(
+                `<div>
+                     Amsterdam Lelylaan: 13 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d984815735de7da3e5d198dc8929bc8 = L.circleMarker(
+                [52.360553741455, 4.9311113357544],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(204.57142857142858 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9d984815735de7da3e5d198dc8929bc8.bindTooltip(
+                `<div>
+                     Amsterdam Muiderpoort: 12 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_566a5cc1109f1133f7042c36e63057b6 = L.circleMarker(
+                [52.337223052979, 4.8902778625488],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(220.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_566a5cc1109f1133f7042c36e63057b6.bindTooltip(
+                `<div>
+                     Amsterdam RAI: 19 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04cf902aa0b846197ec2b7bd2d6528c8 = L.circleMarker(
+                [52.35526, 4.94651],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(229.71428571428572 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_04cf902aa0b846197ec2b7bd2d6528c8.bindTooltip(
+                `<div>
+                     Amsterdam Science Park: 23 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cba026c3c4e658338aabb0b128c11054 = L.circleMarker(
+                [52.388889312744, 4.8377776145935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(200.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_cba026c3c4e658338aabb0b128c11054.bindTooltip(
+                `<div>
+                     Amsterdam Sloterdijk: 10 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0124b8db3a78060aab8146d28051233 = L.circleMarker(
+                [52.338889, 4.872356],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(204.57142857142858 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_c0124b8db3a78060aab8146d28051233.bindTooltip(
+                `<div>
+                     Amsterdam Zuid: 12 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58196dfd99f3fd189be72ef30e347424 = L.circleMarker(
+                [52.208332061768, 5.2808332443237],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(291.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_58196dfd99f3fd189be72ef30e347424.bindTooltip(
+                `<div>
+                     Baarn: 50 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd50ed1265ca493fb80752cca417f98d = L.circleMarker(
+                [52.478332519531, 4.6566667556763],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(257.14285714285717 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_fd50ed1265ca493fb80752cca417f98d.bindTooltip(
+                `<div>
+                     Beverwijk: 35 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bba124125c0dec9345fc309fd1b9b90d = L.circleMarker(
+                [52.130001068115, 5.2038888931274],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(280.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_bba124125c0dec9345fc309fd1b9b90d.bindTooltip(
+                `<div>
+                     Bilthoven: 45 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a29aaf08f403433dc3aa9e13d49c7dad = L.circleMarker(
+                [52.404167175293, 4.6275000572205],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(243.42857142857142 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_a29aaf08f403433dc3aa9e13d49c7dad.bindTooltip(
+                `<div>
+                     Bloemendaal: 29 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d51e16a2cfc907f60694b04b345e2c70 = L.circleMarker(
+                [52.081390380859, 4.7461109161377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(289.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_d51e16a2cfc907f60694b04b345e2c70.bindTooltip(
+                `<div>
+                     Bodegraven: 49 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33188a9dd4aa3385a89222199627bba3 = L.circleMarker(
+                [52.077777862549, 4.6469445228577],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(353.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_33188a9dd4aa3385a89222199627bba3.bindTooltip(
+                `<div>
+                     Boskoop: 77 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_242aa11a4478b1d7b37d41b8676b5597 = L.circleMarker(
+                [52.067658, 4.646186],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(344.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_242aa11a4478b1d7b37d41b8676b5597.bindTooltip(
+                `<div>
+                     Boskoop Snijdelwijk: 73 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a9e7676594a507c219d894a41876326 = L.circleMarker(
+                [52.696109771729, 5.2527775764465],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(321.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_7a9e7676594a507c219d894a41876326.bindTooltip(
+                `<div>
+                     Bovenkarspel Flora: 63 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09f27d004e48ad5fdadcca1165cf05fa = L.circleMarker(
+                [52.694999694824, 5.2377777099609],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(312.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_09f27d004e48ad5fdadcca1165cf05fa.bindTooltip(
+                `<div>
+                     Bovenkarspel-Grootebroek: 59 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_746a41fb6ec579fba4dea7983fdfb79f = L.circleMarker(
+                [52.17149, 4.9906],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(257.14285714285717 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_746a41fb6ec579fba4dea7983fdfb79f.bindTooltip(
+                `<div>
+                     Breukelen: 35 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_135b2e6aa00d877157d990ed1b05871d = L.circleMarker(
+                [52.063056945801, 5.1944446563721],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(284.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_135b2e6aa00d877157d990ed1b05871d.bindTooltip(
+                `<div>
+                     Bunnik: 47 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d9fb0f2cca51c52a49b1636593180e0 = L.circleMarker(
+                [52.26583480835, 5.1630554199219],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(259.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_4d9fb0f2cca51c52a49b1636593180e0.bindTooltip(
+                `<div>
+                     Bussum Zuid: 36 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbed28e9c29894016e730e11fa8ab0cc = L.circleMarker(
+                [52.545833587646, 4.6586112976074],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(254.85714285714286 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_dbed28e9c29894016e730e11fa8ab0cc.bindTooltip(
+                `<div>
+                     Castricum: 34 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e446d5f32e6dc82a275931e5f4fe85a2 = L.circleMarker(
+                [52.147220611572, 4.4563889503479],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(289.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_e446d5f32e6dc82a275931e5f4fe85a2.bindTooltip(
+                `<div>
+                     De Vink: 49 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25d8661f6d519c33e0126521daacaae8 = L.circleMarker(
+                [52.140277862549, 5.2427778244019],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(282.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_25d8661f6d519c33e0126521daacaae8.bindTooltip(
+                `<div>
+                     Den Dolder: 46 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_398b3082281d47aa139bd83bbf503ba3 = L.circleMarker(
+                [52.34515, 4.967566],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(218.28571428571428 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_398b3082281d47aa139bd83bbf503ba3.bindTooltip(
+                `<div>
+                     Diemen: 18 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5256cd28ea1ecb8bdb5d529cb6fb35cb = L.circleMarker(
+                [52.330276489258, 4.9558334350586],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(225.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_5256cd28ea1ecb8bdb5d529cb6fb35cb.bindTooltip(
+                `<div>
+                     Diemen Zuid: 21 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb8251f5cc5fa4fde417822ea2d79756 = L.circleMarker(
+                [52.065277099609, 5.25861120224],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(293.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_cb8251f5cc5fa4fde417822ea2d79756.bindTooltip(
+                `<div>
+                     Driebergen-Zeist: 51 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39c61d1d6ab2b179daa5f231ca8c1702 = L.circleMarker(
+                [52.442501068115, 4.6380553245544],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(270.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_39c61d1d6ab2b179daa5f231ca8c1702.bindTooltip(
+                `<div>
+                     Driehuis: 41 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ad26dbd920bf1103509cde7995906dd = L.circleMarker(
+                [52.323333740234, 4.9363889694214],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(225.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_7ad26dbd920bf1103509cde7995906dd.bindTooltip(
+                `<div>
+                     Duivendrecht: 21 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05acdcb2097d22ceb67523d70ccd1a62 = L.circleMarker(
+                [52.699165344238, 5.286388874054],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(334.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_05acdcb2097d22ceb67523d70ccd1a62.bindTooltip(
+                `<div>
+                     Enkhuizen: 69 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0cf0586060eda6887381ffbcc744618 = L.circleMarker(
+                [52.017501831055, 4.7044444084167],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(300.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_e0cf0586060eda6887381ffbcc744618.bindTooltip(
+                `<div>
+                     Gouda: 54 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ae822bee3c76f4d2f3f8c3c1295910f = L.circleMarker(
+                [52.014999389648, 4.7408332824707],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(305.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9ae822bee3c76f4d2f3f8c3c1295910f.bindTooltip(
+                `<div>
+                     Gouda Goverwelle: 56 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b33e152a1fd77dcc3052743598d09c82 = L.circleMarker(
+                [52.38777923584, 4.6383333206177],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(227.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_b33e152a1fd77dcc3052743598d09c82.bindTooltip(
+                `<div>
+                     Haarlem: 22 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f4f252207a42c4841758f4f7ecc8858 = L.circleMarker(
+                [52.382778167725, 4.6730556488037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(222.85714285714286 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_0f4f252207a42c4841758f4f7ecc8858.bindTooltip(
+                `<div>
+                     Haarlem Spaarnwoude: 20 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8109ac144e0fb2a058039b3b6942ce2f = L.circleMarker(
+                [52.385935, 4.747165],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(216.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_8109ac144e0fb2a058039b3b6942ce2f.bindTooltip(
+                `<div>
+                     Halfweg-Zwanenburg: 17 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d627ddfe926993c81bc01aa094e6ff91 = L.circleMarker(
+                [52.495277404785, 4.6869444847107],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(293.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_d627ddfe926993c81bc01aa094e6ff91.bindTooltip(
+                `<div>
+                     Heemskerk: 51 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e5a408d6ed63f004d2e7bfa4857c53f = L.circleMarker(
+                [52.35916519165, 4.6066665649414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(241.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_5e5a408d6ed63f004d2e7bfa4857c53f.bindTooltip(
+                `<div>
+                     Heemstede-Aerdenhout: 28 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e20d4f661205661840cf720baffbb3da = L.circleMarker(
+                [52.669723510742, 4.8227777481079],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(302.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_e20d4f661205661840cf720baffbb3da.bindTooltip(
+                `<div>
+                     Heerhugowaard: 55 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2203dbfa91f17c0ddeb6b3ef5447a7fa = L.circleMarker(
+                [52.599445343018, 4.7005553245544],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(264.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_2203dbfa91f17c0ddeb6b3ef5447a7fa.bindTooltip(
+                `<div>
+                     Heiloo: 38 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7fc48d85e176838f7929a9865b79b85 = L.circleMarker(
+                [52.302501678467, 4.5655555725098],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(270.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_c7fc48d85e176838f7929a9865b79b85.bindTooltip(
+                `<div>
+                     Hillegom: 41 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb4c905c4dce9e46049a1c7667c3ce42 = L.circleMarker(
+                [52.225833892822, 5.1819443702698],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(241.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_bb4c905c4dce9e46049a1c7667c3ce42.bindTooltip(
+                `<div>
+                     Hilversum: 28 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaa207aaa2a623a28091dc15571c384d = L.circleMarker(
+                [52.238056182861, 5.1738886833191],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(268.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_eaa207aaa2a623a28091dc15571c384d.bindTooltip(
+                `<div>
+                     Hilversum Media Park: 40 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4498406a2598649ce30c61c73875d624 = L.circleMarker(
+                [52.216110229492, 5.1872220039368],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(286.85714285714283 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_4498406a2598649ce30c61c73875d624.bindTooltip(
+                `<div>
+                     Hilversum Sportpark: 48 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2f70c03d951dd3b24432ee70e285da5 = L.circleMarker(
+                [52.16652, 5.45718],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(305.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_e2f70c03d951dd3b24432ee70e285da5.bindTooltip(
+                `<div>
+                     Hoevelaken: 56 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cb3fcab04915b74fd28aa7aa546f0cf = L.circleMarker(
+                [52.17777633667, 5.1791667938232],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(291.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_6cb3fcab04915b74fd28aa7aa546f0cf.bindTooltip(
+                `<div>
+                     Hollandsche Rading: 50 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_392e94f6dedd00d2290e5b136595e102 = L.circleMarker(
+                [52.293334960938, 4.7005553245544],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(248.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_392e94f6dedd00d2290e5b136595e102.bindTooltip(
+                `<div>
+                     Hoofddorp: 31 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1b86f70b123a3f7452729bd3613f3e4 = L.circleMarker(
+                [52.69055557251, 5.1838889122009],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(302.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_f1b86f70b123a3f7452729bd3613f3e4.bindTooltip(
+                `<div>
+                     Hoogkarspel: 55 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eac843b9434ae0885b019710a047bd51 = L.circleMarker(
+                [52.644721984863, 5.0555553436279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(270.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_eac843b9434ae0885b019710a047bd51.bindTooltip(
+                `<div>
+                     Hoorn: 41 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c953b654ada8536a308633f80d65f35 = L.circleMarker(
+                [52.653610229492, 5.0855555534363],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(277.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_6c953b654ada8536a308633f80d65f35.bindTooltip(
+                `<div>
+                     Hoorn Kersenboogerd: 44 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1763de6b968e7f2fe4af57eadfec4501 = L.circleMarker(
+                [52.03402, 5.16821],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(296.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_1763de6b968e7f2fe4af57eadfec4501.bindTooltip(
+                `<div>
+                     Houten: 52 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ec56e1bf484346892e8e6b3fdecbbc1 = L.circleMarker(
+                [52.01701, 5.17949],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(291.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_0ec56e1bf484346892e8e6b3fdecbbc1.bindTooltip(
+                `<div>
+                     Houten Castellum: 50 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea8cd619a2a3578ad230425fa5eba0bd = L.circleMarker(
+                [52.458610534668, 4.8055553436279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(229.71428571428572 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_ea8cd619a2a3578ad230425fa5eba0bd.bindTooltip(
+                `<div>
+                     Koog aan de Zaan: 23 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c121d6d92b7c9f953dc8708c1136a390 = L.circleMarker(
+                [52.49511, 4.75417],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(264.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_c121d6d92b7c9f953dc8708c1136a390.bindTooltip(
+                `<div>
+                     Krommenie-Assendelft: 38 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b29a54bc31075fc4ab726f2eefbfc4b = L.circleMarker(
+                [52.166110992432, 4.4816665649414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(273.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_6b29a54bc31075fc4ab726f2eefbfc4b.bindTooltip(
+                `<div>
+                     Leiden Centraal: 42 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0edce0a76e13e524174ca050a32f79a2 = L.circleMarker(
+                [52.146945953369, 4.4924998283386],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(316.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_0edce0a76e13e524174ca050a32f79a2.bindTooltip(
+                `<div>
+                     Leiden Lammenschans: 61 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1be51c9dfb8d9e7c909413e98fb484d = L.circleMarker(
+                [52.507778167725, 5.4727778434753],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(280.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_f1be51c9dfb8d9e7c909413e98fb484d.bindTooltip(
+                `<div>
+                     Lelystad Centrum: 45 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1069dd9990a7961e71023e695b7e9148 = L.circleMarker(
+                [52.135276794434, 5.0336112976074],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(275.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_1069dd9990a7961e71023e695b7e9148.bindTooltip(
+                `<div>
+                     Maarssen: 43 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fafef413f48a936e2ced2b019e60499 = L.circleMarker(
+                [52.280277252197, 5.1569442749023],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(252.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_2fafef413f48a936e2ced2b019e60499.bindTooltip(
+                `<div>
+                     Naarden-Bussum: 33 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32bad017e33aa21b1758680c829a8871 = L.circleMarker(
+                [52.258888244629, 4.6455554962158],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(261.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_32bad017e33aa21b1758680c829a8871.bindTooltip(
+                `<div>
+                     Nieuw Vennep: 37 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ec1587b197f9eadc19acc9347980f37 = L.circleMarker(
+                [52.222221374512, 5.4938888549805],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(312.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_5ec1587b197f9eadc19acc9347980f37.bindTooltip(
+                `<div>
+                     Nijkerk: 59 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac154d74161eedda63f588f4f368cadb = L.circleMarker(
+                [52.67805480957, 4.9072222709656],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(312.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_ac154d74161eedda63f588f4f368cadb.bindTooltip(
+                `<div>
+                     Obdam: 59 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f11c6ee4e0a1543dfc765b2b08cd6b74 = L.circleMarker(
+                [52.391109466553, 4.6061110496521],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(243.42857142857142 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_f11c6ee4e0a1543dfc765b2b08cd6b74.bindTooltip(
+                `<div>
+                     Overveen: 29 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a03acc12f74cd70229c58375d029b16 = L.circleMarker(
+                [52.50305557251, 4.9536108970642],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(266.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_8a03acc12f74cd70229c58375d029b16.bindTooltip(
+                `<div>
+                     Purmerend: 39 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4fbcf1f71a878757c6e8a1f793ccd1ce = L.circleMarker(
+                [52.511390686035, 4.9683332443237],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(264.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_4fbcf1f71a878757c6e8a1f793ccd1ce.bindTooltip(
+                `<div>
+                     Purmerend Overwhere: 38 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0341a54fab14d150b70d39ccc886f8fc = L.circleMarker(
+                [52.496590632542, 4.9356293678284],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(270.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_0341a54fab14d150b70d39ccc886f8fc.bindTooltip(
+                `<div>
+                     Purmerend Weidevenne: 41 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_673cdeee93a3105fc61088d624e9cde9 = L.circleMarker(
+                [52.43388748169, 4.6325001716614],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(257.14285714285717 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_673cdeee93a3105fc61088d624e9cde9.bindTooltip(
+                `<div>
+                     Santpoort Noord: 35 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc964df9d31a81058ed9e538c4f5ca86 = L.circleMarker(
+                [52.419723510742, 4.6313886642456],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(259.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_fc964df9d31a81058ed9e538c4f5ca86.bindTooltip(
+                `<div>
+                     Santpoort Zuid: 36 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc98ec4282e7030134aef9552754716a = L.circleMarker(
+                [52.215278, 4.517222],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(289.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_cc98ec4282e7030134aef9552754716a.bindTooltip(
+                `<div>
+                     Sassenheim: 49 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b66d6be6030a886be6d89844761c832 = L.circleMarker(
+                [52.30944442749, 4.7619442939758],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(229.71428571428572 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_6b66d6be6030a886be6d89844761c832.bindTooltip(
+                `<div>
+                     Schiphol Airport: 23 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2114706b55f2c4c7864a2c9cd02223a5 = L.circleMarker(
+                [52.173332214355, 5.3099999427795],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(298.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_2114706b55f2c4c7864a2c9cd02223a5.bindTooltip(
+                `<div>
+                     Soest: 53 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd9fc61810801175b773bbaf1b4da773 = L.circleMarker(
+                [52.165279388428, 5.3030557632446],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(298.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_cd9fc61810801175b773bbaf1b4da773.bindTooltip(
+                `<div>
+                     Soest Zuid: 53 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39690aea30da46cc71cb7f25b462b4d8 = L.circleMarker(
+                [52.183612823486, 5.3000001907349],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(318.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_39690aea30da46cc71cb7f25b462b4d8.bindTooltip(
+                `<div>
+                     Soestdijk: 62 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_935a22a601315fafac15069e740e2530 = L.circleMarker(
+                [52.521667480469, 4.7016668319702],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(264.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_935a22a601315fafac15069e740e2530.bindTooltip(
+                `<div>
+                     Uitgeest: 38 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b632f686215a3f9d963566288240dbf = L.circleMarker(
+                [52.088890075684, 5.1102776527405],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(243.42857142857142 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_2b632f686215a3f9d963566288240dbf.bindTooltip(
+                `<div>
+                     Utrecht Centraal: 29 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d04f2ca95a876e0937557653bf604d4 = L.circleMarker(
+                [52.09896, 5.06523],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(261.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9d04f2ca95a876e0937557653bf604d4.bindTooltip(
+                `<div>
+                     Utrecht Leidsche Rijn: 37 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3baadde24a7bbe1f2e6a79c1ec9575b8 = L.circleMarker(
+                [52.06555557251, 5.144166469574],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(298.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_3baadde24a7bbe1f2e6a79c1ec9575b8.bindTooltip(
+                `<div>
+                     Utrecht Lunetten: 53 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_844a5cafef0b419be8fe0b9d21db9ad5 = L.circleMarker(
+                [52.087776184082, 5.1313886642456],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(293.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_844a5cafef0b419be8fe0b9d21db9ad5.bindTooltip(
+                `<div>
+                     Utrecht Maliebaan: 51 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c81c6c6c96e18791f96da616bed3c7c = L.circleMarker(
+                [52.110000610352, 5.1247220039368],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(257.14285714285717 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_9c81c6c6c96e18791f96da616bed3c7c.bindTooltip(
+                `<div>
+                     Utrecht Overvecht: 35 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68682c191d70f365371bd2a38844c826 = L.circleMarker(
+                [52.1000753, 5.0439547],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(264.0 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_68682c191d70f365371bd2a38844c826.bindTooltip(
+                `<div>
+                     Utrecht Terwijde: 38 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e7146963f0f634c457b41935e1ddba2 = L.circleMarker(
+                [52.078889, 5.121667],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(273.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_3e7146963f0f634c457b41935e1ddba2.bindTooltip(
+                `<div>
+                     Utrecht Vaartsche Rijn: 42 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5ec2470f6d0f6dac424c0e6f84ed681 = L.circleMarker(
+                [52.103055, 5.09],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(268.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_a5ec2470f6d0f6dac424c0e6f84ed681.bindTooltip(
+                `<div>
+                     Utrecht Zuilen: 40 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd226b5449b346b68b1d1d6f6ba89123 = L.circleMarker(
+                [52.103056, 5.007404],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(273.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_fd226b5449b346b68b1d1d6f6ba89123.bindTooltip(
+                `<div>
+                     Vleuten: 42 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_167a36c49752bdd441a7b906fa3eef47 = L.circleMarker(
+                [52.224445343018, 4.4844446182251],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(302.8571428571429 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_167a36c49752bdd441a7b906fa3eef47.bindTooltip(
+                `<div>
+                     Voorhout: 55 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7785eea36785b901710cf6f3629190f6 = L.circleMarker(
+                [52.1252784729, 4.4324998855591],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(330.2857142857143 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_7785eea36785b901710cf6f3629190f6.bindTooltip(
+                `<div>
+                     Voorschoten: 67 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20362cd3f2a4b1a4c92cabfb9727e7d8 = L.circleMarker(
+                [52.044166564941, 4.6497220993042],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(339.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_20362cd3f2a4b1a4c92cabfb9727e7d8.bindTooltip(
+                `<div>
+                     Waddinxveen: 71 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad28a9d80cd12ceb9a5d15e3e069abe4 = L.circleMarker(
+                [52.055000305176, 4.6483335494995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(339.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_ad28a9d80cd12ceb9a5d15e3e069abe4.bindTooltip(
+                `<div>
+                     Waddinxveen Noord: 71 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_973512cffb23334b035ccf2288ae54c7 = L.circleMarker(
+                [52.02725, 4.6491],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(332.57142857142856 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_973512cffb23334b035ccf2288ae54c7.bindTooltip(
+                `<div>
+                     Waddinxveen Triangel: 68 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abb761c9e0238164df9f8dfe10dd3625 = L.circleMarker(
+                [52.3127784729, 5.0430555343628],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(222.85714285714286 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_abb761c9e0238164df9f8dfe10dd3625.bindTooltip(
+                `<div>
+                     Weesp: 20 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72c9584bd221289f0e4975a461d944f7 = L.circleMarker(
+                [52.084999084473, 4.8936109542847],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(273.1428571428571 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_72c9584bd221289f0e4975a461d944f7.bindTooltip(
+                `<div>
+                     Woerden: 42 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_995416863a86c48da44ccd13b52fe4f2 = L.circleMarker(
+                [52.489166259766, 4.7922220230103],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(241.14285714285714 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_995416863a86c48da44ccd13b52fe4f2.bindTooltip(
+                `<div>
+                     Wormerveer: 28 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3254641f3574e6ee53ba5d6d27d9f3a5 = L.circleMarker(
+                [52.438888549805, 4.8136110305786],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(222.85714285714286 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_3254641f3574e6ee53ba5d6d27d9f3a5.bindTooltip(
+                `<div>
+                     Zaandam: 20 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22ad8d42b59ccd12deb4a8150a03d6a7 = L.circleMarker(
+                [52.456665039062, 4.8202776908875],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(261.7142857142857 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_22ad8d42b59ccd12deb4a8150a03d6a7.bindTooltip(
+                `<div>
+                     Zaandam Kogerveld: 37 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58ecbe2306676bfbac6e0a255fd90ee1 = L.circleMarker(
+                [52.469165802002, 4.8049998283386],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(227.42857142857144 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_58ecbe2306676bfbac6e0a255fd90ee1.bindTooltip(
+                `<div>
+                     Zaandijk Zaanse Schans: 22 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44bfc1b8f5cc717213cd452eec35ab4e = L.circleMarker(
+                [52.3752784729, 4.5327777862549],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "hsl(257.14285714285717 100% 50%)", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_c583ecc9532c373cfa7b26cc43a03aaa);
+        
+    
+            circle_marker_44bfc1b8f5cc717213cd452eec35ab4e.bindTooltip(
+                `<div>
+                     Zandvoort aan Zee: 35 mins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
